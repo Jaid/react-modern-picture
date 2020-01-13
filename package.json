@@ -31,5 +31,9 @@
   },
   "name": "react-modern-picture",
   "description": "React Component that translates input from modern-image-loader into a picture tag.",
-  "funding": "https://github.com/sponsors/jaid"
+  "funding": "https://github.com/sponsors/jaid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaid/react-modern-picture"
+  }
 }
