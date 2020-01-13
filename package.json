@@ -30,5 +30,6 @@
     "prepareActionJest": "npm run build:prod"
   },
   "name": "react-modern-picture",
-  "description": "React Component that translates input from modern-image-loader into a picture tag."
+  "description": "React Component that translates input from modern-image-loader into a picture tag.",
+  "funding": "https://github.com/sponsors/jaid"
 }
