@@ -48,7 +48,7 @@ export default class extends React.Component {
       return <picture>
         <source {...this.props.input.webp}/>
         <source {...this.props.input.fallback}/>
-        <img/>
+        <img {...imgProps}/>
       </picture>
     }
   }
