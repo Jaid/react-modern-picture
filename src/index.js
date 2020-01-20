@@ -40,7 +40,7 @@ export default class extends React.Component {
     }
     if (isNil(this.props.input.webp) && isString(this.props.input.fallback)) {
       return <picture>
-        {content}
+        a
       </picture>
     }
   }
