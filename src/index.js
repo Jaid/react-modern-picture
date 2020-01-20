@@ -29,7 +29,6 @@ function getImgTag(info) {
 
 /**
  * @class
- * @extends {React.Component<Props>}
  */
 export default class extends React.Component {
 
