@@ -12,7 +12,7 @@ import React from "react"
   */
 
 function getSourceTag(info) {
-  const props = { }
+  const props = {}
   if (info.type) {
     props.type = info.type
   }
@@ -20,11 +20,11 @@ function getSourceTag(info) {
 }
 
 function getImgTag(info) {
-  const props = { }
+  const props = {}
   if (info.alt) {
     props.type = info.alt
   }
-  return <img/>
+  return <img {...props}/>
 }
 
 /**
