@@ -1,5 +1,5 @@
 {
-  "webpackConfigJaid": "universalLib",
+  "webpackConfigJaid": "reactDomComponent",
   "version": "0.1.1",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
