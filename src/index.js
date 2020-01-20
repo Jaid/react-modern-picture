@@ -1,6 +1,6 @@
 /** @module react-modern-picture */
 
-import {isNil, isObject, isString} from "lodash"
+import {isNil, isObject, isString, pick} from "lodash"
 import PropTypes from "prop-types"
 import React from "react"
 
@@ -10,22 +10,6 @@ import React from "react"
   *   input: *,
   * }} Props
   */
-
-function getSourceTag(info) {
-  const props = {}
-  if (info.type) {
-    props.type = info.type
-  }
-  return <source {...props}/>
-}
-
-function getImgTag(info) {
-  const props = {}
-  if (info.alt) {
-    props.alt = info.alt
-  }
-  return <img {...props}/>
-}
 
 /**
  * @class
@@ -42,33 +26,29 @@ export default class extends React.Component {
       PropTypes.arrayOf(PropTypes.object),
     ]),
     input: PropTypes.any.isRequired,
+    style: PropTypes.object,
   }
 
   render() {
-    const classProps = {}
-    if (this.props.className) {
-      classProps.className = this.props.className
-    }
+    const imgProps = pick(this.props, "className", "style")
     if (isString(this.props.input)) {
-      return <img src={this.props.input} {...classProps}/>
+      return <img src={this.props.input} {...imgProps}/>
     }
     if (isNil(this.props.input.webp) && isString(this.props.input.fallback)) {
-      return <img src={this.props.input.fallback} {...classProps}/>
+      return <img src={this.props.input.fallback} {...imgProps}/>
     }
     if (isString(this.props.input.webp) && isNil(this.props.input.fallback)) {
-      return <img src={this.props.input.webp} {...classProps}/>
+      return <img src={this.props.input.webp} {...imgProps}/>
     }
-    if (isNil(this.props.input.webp)) {
-      return <picture {...classProps}>
-        {getSourceTag(this.props.input.fallback)}
-        {getImgTag(this.props.input.fallback)}
-      </picture>
-    }
-    if (isObject(this.props.input.webp) && isObject(this.props.input.fallback) && isObject(this.props.input.img)) {
-      return <picture {...classProps}>
-        {getSourceTag(this.props.input.webp)}
-        {getSourceTag(this.props.input.fallback)}
-        {getImgTag(this.props.input.img)}
+    if (isObject(this.props.input.webp) && isObject(this.props.input.fallback)) {
+      Object.assign(imgProps, this.props.input.img)
+      if (!imgProps.src) {
+        imgProps.src = this.props.input.fallback.srcset
+      }
+      return <picture>
+        <source {...this.props.input.webp}/>
+        <source {...this.props.input.fallback}/>
+        <img/>
       </picture>
     }
   }
