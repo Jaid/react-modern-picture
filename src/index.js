@@ -1,7 +1,6 @@
 /** @module react-modern-picture */
 
-import classnames from "classnames"
-import {isNil, isString} from "lodash"
+import {isNil, isObject, isString} from "lodash"
 import PropTypes from "prop-types"
 import React from "react"
 
@@ -11,6 +10,22 @@ import React from "react"
   *   input: *,
   * }} Props
   */
+
+function getSourceTag(info) {
+  const props = { }
+  if (info.type) {
+    props.type = info.type
+  }
+  return <source {...props}/>
+}
+
+function getImgTag(info) {
+  const props = { }
+  if (info.alt) {
+    props.type = info.alt
+  }
+  return <img/>
+}
 
 /**
  * @class
@@ -33,14 +48,28 @@ export default class extends React.Component {
   render() {
     const classProps = {}
     if (this.props.className) {
-      classProps = classnames(this.props.className)
+      classProps.className = this.props.className
     }
     if (isString(this.props.input)) {
       return <img src={this.props.input} {...classProps}/>
     }
     if (isNil(this.props.input.webp) && isString(this.props.input.fallback)) {
-      return <picture>
-        a
+      return <img src={this.props.input.fallback} {...classProps}/>
+    }
+    if (isString(this.props.input.webp) && isNil(this.props.input.fallback)) {
+      return <img src={this.props.input.webp} {...classProps}/>
+    }
+    if (isNil(this.props.input.webp)) {
+      return <picture {...classProps}>
+        {getSourceTag(this.props.input.fallback)}
+        {getImgTag(this.props.input.fallback)}
+      </picture>
+    }
+    if (isObject(this.props.input.webp) && isObject(this.props.input.fallback) && isObject(this.props.input.img)) {
+      return <picture {...classProps}>
+        {getSourceTag(this.props.input.webp)}
+        {getSourceTag(this.props.input.fallback)}
+        {getImgTag(this.props.input.img)}
       </picture>
     }
   }
