@@ -22,7 +22,7 @@ function getSourceTag(info) {
 function getImgTag(info) {
   const props = {}
   if (info.alt) {
-    props.type = info.alt
+    props.alt = info.alt
   }
   return <img {...props}/>
 }

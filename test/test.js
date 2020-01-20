@@ -34,6 +34,27 @@ it("should run with advanced input", () => {
   }
   const dom = <ReactModernPicture input={input}/>
   const result = reactTestRenderer.create(dom).toJSON()
-  expect(result.type).toStrictEqual("picture")
-  debugger
+  expect(result).toMatchObject({
+    type: "picture",
+    children: [
+      {
+        type: "source",
+        props: {
+          type: "image/webp",
+        },
+      },
+      {
+        type: "source",
+        props: {
+          type: "image/jpeg",
+        },
+      },
+      {
+        type: "img",
+        props: {
+          alt: "Dog",
+        },
+      },
+    ],
+  })
 })
