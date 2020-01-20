@@ -1,21 +1,11 @@
 # react-modern-picture
 
 
-<a href="https://raw.githubusercontent.com/jaid/react-modern-picture/master/license.txt"><img src="https://img.shields.io/github/license/jaid/react-modern-picture?style=flat-square" alt="License"/></a> <a href="https://github.com/sponsors/jaid"><img src="https://img.shields.io/badge/<3-Sponsor-FF45F1?style=flat-square" alt="Sponsor react-modern-picture"/></a>
+<a href="https://raw.githubusercontent.com/jaid/react-modern-picture/master/license.txt"><img src="https://img.shields.io/github/license/jaid/react-modern-picture?style=flat-square" alt="License"/></a> <a href="https://github.com/sponsors/jaid"><img src="https://img.shields.io/badge/<3-Sponsor-FF45F1?style=flat-square" alt="Sponsor react-modern-picture"/></a>  
 <a href="https://actions-badge.atrox.dev/jaid/react-modern-picture/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2Fjaid%2Freact-modern-picture%2Fbadge" alt="Build status"/></a> <a href="https://github.com/jaid/react-modern-picture/commits"><img src="https://img.shields.io/github/commits-since/jaid/react-modern-picture/v0.1.1?style=flat-square&logo=github" alt="Commits since v0.1.1"/></a> <a href="https://github.com/jaid/react-modern-picture/commits"><img src="https://img.shields.io/github/last-commit/jaid/react-modern-picture?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/jaid/react-modern-picture/issues"><img src="https://img.shields.io/github/issues/jaid/react-modern-picture?style=flat-square&logo=github" alt="Issues"/></a>  
 <a href="https://npmjs.com/package/react-modern-picture"><img src="https://img.shields.io/npm/v/react-modern-picture?style=flat-square&logo=npm&label=latest%20version" alt="Latest version on npm"/></a> <a href="https://github.com/jaid/react-modern-picture/network/dependents"><img src="https://img.shields.io/librariesio/dependents/npm/react-modern-picture?style=flat-square&logo=npm" alt="Dependents"/></a> <a href="https://npmjs.com/package/react-modern-picture"><img src="https://img.shields.io/npm/dm/react-modern-picture?style=flat-square&logo=npm" alt="Downloads"/></a>
 
 **React Component that translates input from modern-image-loader into a picture tag.**
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -30,10 +20,16 @@ npm install --save react-modern-picture@^0.1.1
 ```bash
 yarn add react-modern-picture@^0.1.1
 ```
-<a href="https://jsdelivr.com/package/npm/react-modern-picture/"><img src="https://img.shields.io/badge/jsDelivr-react--modern--picture-orange?style=flat-square&logo=html5&logoColor=white" alt="react-modern-picture on jsDelivr"/></a> <a href="https://unpkg.com/browse/react-modern-picture/"><img src="https://img.shields.io/badge/UNPKG-react--modern--picture-orange?style=flat-square&logo=html5&logoColor=white" alt="react-modern-picture on UNPKG"/></a>
-```html
-<script src="https://cdn.jsdelivr.net/npm/react-modern-picture@0.1.1/index.js"/>
-```
+
+
+
+
+
+
+
+
+
+
 
 
 
