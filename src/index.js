@@ -30,7 +30,7 @@ export default class extends React.Component {
   }
 
   render() {
-    const imgProps = pick(this.props, ["className", "style"])
+    const imgProps = pick(this.props, ["className", "style", "alt"])
     if (isString(this.props.input)) {
       return <img src={this.props.input} {...imgProps}/>
     }
