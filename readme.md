@@ -12,13 +12,24 @@
 
 
 ## Installation
+
 <a href="https://npmjs.com/package/react-modern-picture"><img src="https://img.shields.io/badge/npm-react--modern--picture-C23039?style=flat-square&logo=npm" alt="react-modern-picture on npm"/></a>
+
 ```bash
 npm install --save react-modern-picture@^1.1.1
 ```
+
 <a href="https://yarnpkg.com/package/react-modern-picture"><img src="https://img.shields.io/badge/Yarn-react--modern--picture-2F8CB7?style=flat-square&logo=yarn&logoColor=white" alt="react-modern-picture on Yarn"/></a>
+
 ```bash
 yarn add react-modern-picture@^1.1.1
+```
+
+<a href="https://github.com/jaid/react-modern-picture/packages"><img src="https://img.shields.io/badge/GitHub Packages-@jaid/react--modern--picture-24282e?style=flat-square&logo=github" alt="@jaid/react-modern-picture on GitHub Packages"/></a>  
+(if [configured properly](https://help.github.com/en/github/managing-packages-with-github-packages/configuring-npm-for-use-with-github-packages))
+
+```bash
+npm install --save @jaid/react-modern-picture@^1.1.1
 ```
 
 
