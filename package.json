@@ -43,5 +43,23 @@
     "url": "https://github.com/jaid/react-modern-picture"
   },
   "homepage": "https://github.com/Jaid/react-modern-picture",
-  "keywords": []
+  "keywords": [
+    "component",
+    "html",
+    "image",
+    "img",
+    "lib",
+    "library",
+    "modern-image-loader",
+    "picture",
+    "react",
+    "react-component",
+    "react-components",
+    "react-dom",
+    "responsive",
+    "util",
+    "utility",
+    "webpack",
+    "webpack-loader"
+  ]
 }
