@@ -16,7 +16,7 @@ import React from "react"
  */
 export default class extends React.Component {
 
-  static displayName = _PKG_NAME
+  static displayName = process.env.REPLACE_PKG_NAME
 
   static propTypes = {
     className: PropTypes.oneOfType([
