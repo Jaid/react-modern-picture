@@ -15,7 +15,7 @@
     "babel-preset-jaid": "^13.0.0",
     "browserslist-config-jaid-web": "^2.3.1",
     "eslint": "^7.27.0",
-    "eslint-config-jaid-react": "^1.53.1",
+    "eslint-config-jaid-react": "^1.54.0",
     "jest": "^27.0.3",
     "react": "^17.0.2",
     "react-test-renderer": "^17.0.2",
