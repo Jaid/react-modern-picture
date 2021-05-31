@@ -28,10 +28,14 @@ export default class extends React.Component {
     input: PropTypes.any.isRequired,
     style: PropTypes.object,
     alt: PropTypes.string,
+    lazy: PropTypes.bool,
   }
 
   render() {
     const imgProps = pick(this.props, ["className", "style", "alt"])
+    if (this.props.lazy) {
+      imgProps.loading = "lazy"
+    }
     if (isString(this.props.input)) {
       return <img src={this.props.input} {...imgProps}/>
     }
