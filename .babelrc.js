@@ -1,3 +1,3 @@
 const { default: configure } = require("babel-preset-jaid")
 
-module.exports = api => configure(api, {react: "component"})
+module.exports = api => configure(api, {react: "dom-lib"})
