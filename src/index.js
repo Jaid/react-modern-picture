@@ -27,6 +27,7 @@ export default class extends React.Component {
     ]),
     input: PropTypes.any.isRequired,
     style: PropTypes.object,
+    alt: PropTypes.string,
   }
 
   render() {
