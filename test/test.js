@@ -1,5 +1,4 @@
-import path from "node:path"
-
+import path from "path"
 import React from "react"
 import reactTestRenderer from "react-test-renderer"
 
