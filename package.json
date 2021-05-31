@@ -10,7 +10,6 @@
     "react": "^17.0.2"
   },
   "devDependencies": {
-    "acorn": "^8.3.0",
     "babel-jest": "^27.0.2",
     "babel-preset-jaid": "^13.0.0",
     "browserslist-config-jaid-web": "^2.3.1",
